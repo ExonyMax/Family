@@ -1,0 +1,95 @@
+ <!DOCTYPE html>
+ <html lang="ru">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Water</title>
+    <link rel="stylesheet" href="./style/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet"> 
+ </head>
+ 
+ <body>
+        <nav><!--Header-->
+            <div class="logo">
+                <img src="/img/logo_Монтажная область 1.png" alt="Logo Image" height="130px" width="130px">
+            </div>
+            <div class="hamburger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Главная</a></li>
+                <li class="n-l">
+                    <ul class="submenu">
+                        <ol><a href="#">RC</a></ol>
+                        <ol><a href="#">ArkTea</a></ol>
+                        <ol><a href="#">elRio</a></ol>
+                        <ol><a href="#">Fensi</a></ol>
+                        <ol><a href="#">Ok & Vitamin</a></ol>
+                    </ul>
+                    <a href="#">Продукция</a></li>
+                <li><a href="#">О Компании</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </nav>
+        <script>
+          const hamburger = document.querySelector(".hamburger");
+const navLinks = document.querySelector(".nav-links");
+const links = document.querySelectorAll(".nav-links li");
+
+hamburger.addEventListener('click', ()=>{
+   //Animate Links
+    navLinks.classList.toggle("open");
+    links.forEach(link => {
+        link.classList.toggle("fade");
+    });
+
+    //Hamburger Animation
+    hamburger.classList.toggle("toggle");
+});
+
+
+        </script>
+    
+    <!--Header-->
+
+
+<div class="back"><span>Family Water</span></div>
+
+
+
+<div class="section_info_block">
+  <div class="info_inner_1">
+        <a href="#"><img class="icon_1" src="img/icon_inner_1.png" alt=""></a>
+        <p>Family Water - вода полученная из природнного источника</p>
+      
+  </div>
+  <div class="info_inner_2">
+        <a href="#"><img class="icon_2" src="img/icon_inner_2.png" alt=""></a>
+        <p>Минералы, входящие в состав природной воды, полезны для организма</p>
+  </div>
+  <div class="info_inner_3">
+        <a href="#"><img class="icon_3" src="img/icon_inner_3.png" alt=""></a>
+        <p>Подземная вода считается самым полезным видом природной воды</p>
+  </div>
+
+</div>
+
+
+
+<div class="bottlers_main">
+    <img  class="img_bot" src="img/Frame 1.png" alt="">
+</div>
+
+
+
+
+ </body>
+ <script src="./style/style.js"></script>
+ 
+ </html>
